@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Code d'intégration récupéré sur le site Google Fonts pour la police "Outfit" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color : hsl(212, 45%, 89%); /* Slate 300 */      
+      display: flex; /* Pour activer le mode Flexbox */
+      flex-direction: column; /* Pour que les éléments enfants soient disposés en colonne */
+      justify-content: center; /* Pour centrer horizontalement (gauche - droite) */
+      align-items: center; /* Pour centrer verticalement (haut - bas) */
+      min-height: 100vh; /* Donne au body la hauteur totale de la fenêtre visible */
+      margin: 0;   /* Supprime les marges par défaut du navigateur */
+      font-family: "Outfit", sans-serif;
+    }
+
+    .card {
+      /* width: 225px; */
+      width: 90%; /* S'adapte avec un peu de marge sur les très petits écrans */
+      max-width: 280px; /* Empêche la carte de grandir au-delà de sa taille idéale */
+      background-color: hsl(0,0%,100%); /* Couleur blanche de la carte */
+      border-radius: 15px;
+      box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .card img {
+      width: 100%;
+      display: block; /* Permet d'éviter l'espace sous l'image */
+      border-radius: 10px;
+    }
+    .card h1 {
+      color: hsl(218, 44%, 22%); /* Slate 900 */
+      font-size: 22px;
+      font-weight: 700; /* Par défaut h1 a une graisse de 700 mais j'ai quand même précisé*/
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: hsl(216, 15%, 48%); /* Slate 500 */
+      font-size: 15px;
+      font-weight: 400; /* Par défaut p a une graisse de 400 mais j'ai quand même précisé*/
+      line-height: 1.4; /* Donne une hauteur de ligne (interligne) aérée */
+      margin: 0 10px 20px 10px; /* Ajoute un peu d'espace autour du texte sens des ajustements : H/D/B/G*/
+    }
+
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center; 
+      padding-bottom: 10px; /* Ajoute un espace en bas du footer */
+    }
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+
+</head>
+<body>
+
+<div class="card">
+  <img src="images/image-qr-code.png" alt="Image du QR code"/>
+  <h1>Improve your front-end skills by building projects</h1>
+  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+</div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Kaïna SLIMANI</a>.
+  </footer>
+</body>
+</html>
